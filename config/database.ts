@@ -10,9 +10,7 @@ module.exports = ({ env }) => ({
       user: env('DATABASE_USERNAME', 'strapi'),
       password: env('DATABASE_PASSWORD', 'strapi'),
       schema: env('DATABASE_SCHEMA', 'public'), // Not required
-      ssl: {
-        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
-      },
+      ssl: false,
     },
     acquireConnectionTimeout: 1000000,
     pool: { 
