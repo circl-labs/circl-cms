@@ -14,7 +14,8 @@ module.exports = ({ env }) => ({
         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
       },
     },
-    debug: false,
+    acquireConnectionTimeout: 1000000,
     pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
+    debug: false,
   },
 });
