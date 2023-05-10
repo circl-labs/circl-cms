@@ -16,7 +16,7 @@ module.exports = ({ env }) => ({
     },
     acquireConnectionTimeout: 1000000,
     pool: { 
-      min: 1, 
+      min: 0, 
       max: 10,
       acquireTimeoutMillis: 900000,
       createTimeoutMillis: 900000,
