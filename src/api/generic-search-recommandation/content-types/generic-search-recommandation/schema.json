@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_search_recommandations",
+  "info": {
+    "singularName": "generic-search-recommandation",
+    "pluralName": "generic-search-recommandations",
+    "displayName": "Generic Search Recommandation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "generic_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generic-product.generic-product"
+    }
+  }
+}
