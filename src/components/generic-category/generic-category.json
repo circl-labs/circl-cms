@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_generic_category_generic_categories",
+  "info": {
+    "displayName": "Generic Category",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subcategories": {
+      "type": "customField",
+      "options": [
+        "Agrumes",
+        "Fruits de Saison"
+      ],
+      "customField": "plugin::multi-select.multi-select",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
