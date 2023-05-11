@@ -25,12 +25,72 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "weight_default": {
+      "type": "string",
       "required": true
+    },
+    "weight_list": {
+      "type": "customField",
+      "options": [
+        "250g",
+        "500g",
+        "1kg",
+        "75cl",
+        "1L"
+      ],
+      "customField": "plugin::multi-select.multi-select",
+      "required": true
+    },
+    "brands": {
+      "type": "customField",
+      "options": [
+        "Nestlé",
+        "Coca-Cola",
+        "Orangina",
+        ""
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "seasons": {
+      "type": "customField",
+      "options": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "estimated_consumption_date": {
+      "type": "integer",
+      "min": 0
+    },
+    "footprint": {
+      "type": "float"
+    },
+    "storage_method": {
+      "type": "customField",
+      "options": [
+        "Température ambiante",
+        "Congélateur",
+        "Réfrigérateur"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
