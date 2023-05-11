@@ -4,7 +4,8 @@
   "info": {
     "singularName": "generic-category",
     "pluralName": "generic-categories",
-    "displayName": "Generic Category"
+    "displayName": "Generic Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,15 +20,23 @@
     "subcategories": {
       "type": "customField",
       "required": true,
-      "customField": "plugin::multi-select.multi-select"
+      "customField": "plugin::multi-select.multi-select",
+      "options": [
+        "Fruits à Pépin",
+        "Agrumes",
+        "Fruits à Noyau",
+        "Fruits Rouges et Baies",
+        "Fruits à Coque",
+        "Fruits Tropicaux"
+      ]
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
