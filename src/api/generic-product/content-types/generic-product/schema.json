@@ -90,6 +90,12 @@
       "relation": "oneToOne",
       "target": "api::generic-search-recommandation.generic-search-recommandation",
       "mappedBy": "generic_product"
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::generic-subcategory.generic-subcategory",
+      "inversedBy": "generic_products"
     }
   }
 }

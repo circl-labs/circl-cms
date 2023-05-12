@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_subcategories",
+  "info": {
+    "singularName": "generic-subcategory",
+    "pluralName": "generic-subcategories",
+    "displayName": "Generic Subcategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "generic_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generic-product.generic-product",
+      "mappedBy": "subcategory"
+    },
+    "generic_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::generic-category.generic-category",
+      "inversedBy": "subcategories"
+    }
+  }
+}

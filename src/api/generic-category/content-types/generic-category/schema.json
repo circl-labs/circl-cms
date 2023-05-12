@@ -12,18 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Category": {
+    "category": {
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "subcategories": {
-      "type": "customField",
-      "options": [
-        "Agrumes"
-      ],
-      "required": true,
-      "customField": "plugin::multi-select.multi-select"
     },
     "image": {
       "type": "media",
@@ -33,10 +25,11 @@
         "images"
       ]
     },
-    "generic_products": {
+    "subcategories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::generic-product.generic-product"
+      "target": "api::generic-subcategory.generic-subcategory",
+      "mappedBy": "generic_category"
     }
   }
 }
