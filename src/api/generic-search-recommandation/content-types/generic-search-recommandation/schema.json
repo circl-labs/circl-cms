@@ -11,10 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "generic_products": {
+    "generic_product": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::generic-product.generic-product"
+      "relation": "oneToOne",
+      "target": "api::generic-product.generic-product",
+      "inversedBy": "generic_search_recommandation"
     }
   }
 }

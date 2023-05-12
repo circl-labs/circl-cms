@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_categories",
+  "info": {
+    "singularName": "generic-category",
+    "pluralName": "generic-categories",
+    "displayName": "Generic Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Category": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subcategories": {
+      "type": "customField",
+      "options": [
+        "Agrumes"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "generic_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generic-product.generic-product"
+    }
+  }
+}

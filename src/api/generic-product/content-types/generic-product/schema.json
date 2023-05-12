@@ -17,13 +17,6 @@
       "required": true,
       "unique": true
     },
-    "generic_category": {
-      "displayName": "Generic Category",
-      "type": "component",
-      "repeatable": false,
-      "component": "generic-category.generic-category",
-      "required": true
-    },
     "image": {
       "type": "media",
       "multiple": true,
@@ -34,7 +27,7 @@
     },
     "weight_default": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "weight_list": {
       "type": "customField",
@@ -46,7 +39,7 @@
         "1L"
       ],
       "customField": "plugin::multi-select.multi-select",
-      "required": true
+      "required": false
     },
     "brands": {
       "type": "customField",
@@ -91,6 +84,12 @@
         "Réfrigérateur"
       ],
       "customField": "plugin::multi-select.multi-select"
+    },
+    "generic_search_recommandation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-search-recommandation.generic-search-recommandation",
+      "mappedBy": "generic_product"
     }
   }
 }
