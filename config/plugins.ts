@@ -5,7 +5,7 @@ module.exports = {
         providerOptions: {
             bucketName: 'circl-data-dev-eu-assets',
             publicFiles: true,
-            uniform: false,
+            uniform: true,
             basePath: '',
         },
       },
