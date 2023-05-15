@@ -4,7 +4,7 @@ module.exports = {
         provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
         providerOptions: {
             bucketName: 'circl-data-dev-eu-assets',
-            publicFiles: false,
+            publicFiles: true,
             uniform: false,
             basePath: '',
         },
