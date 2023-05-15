@@ -7,8 +7,8 @@ export default [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com'],
+          'img-src': ["'self'", 'data:', 'blob:', 'media.circl.fr'],
+          'media-src': ["'self'", 'data:', 'blob:', 'media.circl.fr'],
           upgradeInsecureRequests: null,
         },
       },
