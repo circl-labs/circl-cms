@@ -10,4 +10,16 @@ module.exports = {
         },
       },
     },
+    email: {
+    config: {
+      provider: 'sendgrid',
+      providerOptions: {
+        apiKey: env('SENDGRID_API_KEY'),
+      },
+      settings: {
+        defaultFrom: 'alain.bansais@circl.fr',
+        defaultReplyTo: 'alain.bansais@circl.fr',
+      },
+    },
+  },
 }
