@@ -96,6 +96,11 @@
       "relation": "manyToOne",
       "target": "api::generic-subcategory.generic-subcategory",
       "inversedBy": "generic_products"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
