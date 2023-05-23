@@ -83,6 +83,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::seller-product-detail.seller-product-detail"
+    },
+    "generic_product_id": {
+      "type": "integer",
+      "required": true
     }
   }
 }
