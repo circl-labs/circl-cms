@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "baskets",
+  "info": {
+    "singularName": "basket",
+    "pluralName": "baskets",
+    "displayName": "Basket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item"
+    },
+    "seller_shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seller-shop.seller-shop"
+    }
+  }
+}
