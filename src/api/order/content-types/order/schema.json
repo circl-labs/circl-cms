@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_amount": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "payment_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "is_paid": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ref_order": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "basket": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::basket.basket"
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    }
+  }
+}

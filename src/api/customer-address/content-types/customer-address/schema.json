@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_addresses",
+  "info": {
+    "singularName": "customer-address",
+    "pluralName": "customer-addresses",
+    "displayName": "Customer Address"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
