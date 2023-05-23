@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sellers",
+  "info": {
+    "singularName": "seller",
+    "pluralName": "sellers",
+    "displayName": "Seller",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "delivery_threshold": {
+      "type": "integer"
+    },
+    "free_delivery_threshold": {
+      "type": "integer"
+    },
+    "delivery": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "click_and_collect": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "is_partner": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "website_url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "delivery_time": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "seller_shops": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::seller-shop.seller-shop",
+      "mappedBy": "seller"
+    },
+    "seller_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::seller-product.seller-product"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seller_products",
+  "info": {
+    "singularName": "seller-product",
+    "pluralName": "seller-products",
+    "displayName": "Seller Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "tags_list": {
+      "type": "customField",
+      "options": [
+        "french",
+        "organic"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "nutriscore": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "ecoscore": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "ingredients": {
+      "type": "text"
+    },
+    "nutritional_values": {
+      "type": "text"
+    },
+    "allergens": {
+      "type": "text"
+    },
+    "consumption_date": {
+      "type": "integer"
+    },
+    "seller_product_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seller-product-detail.seller-product-detail"
+    }
+  }
+}

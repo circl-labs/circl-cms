@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seller_product_details",
+  "info": {
+    "singularName": "seller-product-detail",
+    "pluralName": "seller-product-details",
+    "displayName": "Seller Product Detail"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "stock_quantity": {
+      "type": "integer"
+    }
+  }
+}

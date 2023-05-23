@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seller_shops",
+  "info": {
+    "singularName": "seller-shop",
+    "pluralName": "seller-shops",
+    "displayName": "Seller Shop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "opening_hours": {
+      "type": "string"
+    },
+    "str_acc_id": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "seller": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::seller.seller",
+      "inversedBy": "seller_shops"
+    },
+    "seller_product_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::seller-product-detail.seller-product-detail"
+    }
+  }
+}
