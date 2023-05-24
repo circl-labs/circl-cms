@@ -4,7 +4,8 @@
   "info": {
     "singularName": "seller-product-detail",
     "pluralName": "seller-product-details",
-    "displayName": "Seller Product Detail"
+    "displayName": "Seller Product Detail",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,6 +18,11 @@
     },
     "stock_quantity": {
       "type": "integer"
+    },
+    "seller_shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seller-shop.seller-shop"
     }
   }
 }

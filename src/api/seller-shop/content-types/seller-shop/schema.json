@@ -41,11 +41,6 @@
       "relation": "manyToOne",
       "target": "api::seller.seller",
       "inversedBy": "seller_shops"
-    },
-    "seller_product_details": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::seller-product-detail.seller-product-detail"
     }
   }
 }
