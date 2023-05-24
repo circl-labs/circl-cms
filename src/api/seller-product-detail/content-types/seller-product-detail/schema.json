@@ -23,6 +23,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::seller-shop.seller-shop"
+    },
+    "seller_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seller-product.seller-product"
     }
   }
 }

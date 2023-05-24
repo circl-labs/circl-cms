@@ -79,11 +79,6 @@
     "consumption_date": {
       "type": "integer"
     },
-    "seller_product_detail": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::seller-product-detail.seller-product-detail"
-    },
     "generic_product_id": {
       "type": "integer",
       "required": true
