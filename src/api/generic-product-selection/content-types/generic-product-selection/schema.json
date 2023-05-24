@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_product_selections",
+  "info": {
+    "singularName": "generic-product-selection",
+    "pluralName": "generic-product-selections",
+    "displayName": "Generic Product Selection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "weight": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string"
+    },
+    "generic_grocery_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-grocery-list.generic-grocery-list"
+    },
+    "generic_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-product.generic-product"
+    }
+  }
+}

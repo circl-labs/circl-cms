@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_grocery_lists",
+  "info": {
+    "singularName": "generic-grocery-list",
+    "pluralName": "generic-grocery-lists",
+    "displayName": "Generic Grocery List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "generic_product_selections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generic-product-selection.generic-product-selection"
+    }
+  }
+}
