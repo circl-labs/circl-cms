@@ -87,6 +87,9 @@
     "generic_product_id": {
       "type": "integer",
       "required": true
+    },
+    "raw_name": {
+      "type": "string"
     }
   }
 }
