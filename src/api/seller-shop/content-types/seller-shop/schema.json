@@ -18,15 +18,15 @@
     "address": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": false
     },
     "longitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "latitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "opening_hours": {
       "type": "string"
