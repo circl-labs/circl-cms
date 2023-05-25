@@ -33,7 +33,7 @@
     "origin": {
       "type": "string"
     },
-    "weight": {
+    "weight_unit": {
       "type": "string"
     },
     "tags_list": {
@@ -85,6 +85,9 @@
     },
     "raw_name": {
       "type": "string"
+    },
+    "weight": {
+      "type": "decimal"
     }
   }
 }
