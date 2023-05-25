@@ -16,10 +16,6 @@
       "type": "integer",
       "required": true
     },
-    "weight": {
-      "type": "string",
-      "required": true
-    },
     "brand": {
       "type": "string"
     },
@@ -32,6 +28,31 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::generic-product.generic-product"
+    },
+    "tags_list": {
+      "type": "customField",
+      "options": [
+        "french",
+        "organic",
+        "loca",
+        "best_price",
+        "best_product"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "weight": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "weight_unit": {
+      "type": "enumeration",
+      "enum": [
+        "u",
+        "gr",
+        "ml"
+      ],
+      "required": true
     }
   }
 }
