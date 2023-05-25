@@ -15,10 +15,6 @@
     "name": {
       "type": "string"
     },
-    "address": {
-      "type": "string",
-      "required": true
-    },
     "customer": {
       "type": "relation",
       "relation": "oneToOne",
@@ -28,6 +24,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::generic-product-selection.generic-product-selection"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address",
+      "required": true
     }
   }
 }

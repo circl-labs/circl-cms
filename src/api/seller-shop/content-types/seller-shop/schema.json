@@ -15,19 +15,6 @@
     "name": {
       "type": "string"
     },
-    "address": {
-      "type": "string",
-      "unique": true,
-      "required": false
-    },
-    "longitude": {
-      "type": "float",
-      "required": false
-    },
-    "latitude": {
-      "type": "float",
-      "required": false
-    },
     "opening_hours": {
       "type": "string"
     },
@@ -41,6 +28,11 @@
       "relation": "manyToOne",
       "target": "api::seller.seller",
       "inversedBy": "seller_shops"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
     }
   }
 }

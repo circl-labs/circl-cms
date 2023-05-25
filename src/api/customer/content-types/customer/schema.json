@@ -26,10 +26,10 @@
       "required": true,
       "unique": true
     },
-    "customer_addresses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::customer-address.customer-address"
+    "addresses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "address.address"
     }
   }
 }
