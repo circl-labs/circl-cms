@@ -30,6 +30,13 @@
       "relation": "oneToMany",
       "target": "api::generic-subcategory.generic-subcategory",
       "mappedBy": "generic_category"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
