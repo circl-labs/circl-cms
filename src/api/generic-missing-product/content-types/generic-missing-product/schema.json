@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_missing_products",
+  "info": {
+    "singularName": "generic-missing-product",
+    "pluralName": "generic-missing-products",
+    "displayName": "Generic Missing Product"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
