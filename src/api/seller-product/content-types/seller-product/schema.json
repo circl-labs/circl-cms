@@ -79,15 +79,16 @@
     "consumption_date": {
       "type": "integer"
     },
-    "generic_product_id": {
-      "type": "integer",
-      "required": true
-    },
     "raw_name": {
       "type": "string"
     },
     "weight": {
       "type": "decimal"
+    },
+    "generic_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-product.generic-product"
     }
   }
 }
