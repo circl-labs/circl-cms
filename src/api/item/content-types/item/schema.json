@@ -15,10 +15,10 @@
     "quantity": {
       "type": "integer"
     },
-    "seller_product": {
+    "seller_product_detail": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::seller-product.seller-product"
+      "target": "api::seller-product-detail.seller-product-detail"
     }
   }
 }
