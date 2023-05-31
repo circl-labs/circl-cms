@@ -37,16 +37,6 @@
       "customField": "plugin::multi-select.multi-select",
       "required": false
     },
-    "brands": {
-      "type": "customField",
-      "options": [
-        "Nestlé",
-        "Coca-Cola",
-        "Orangina",
-        ""
-      ],
-      "customField": "plugin::multi-select.multi-select"
-    },
     "seasons": {
       "type": "customField",
       "options": [
@@ -124,6 +114,11 @@
       ],
       "required": true,
       "customField": "plugin::multi-select.multi-select"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand"
     }
   }
 }
