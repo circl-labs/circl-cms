@@ -112,6 +112,18 @@
       "type": "integer",
       "required": true,
       "default": 1
+    },
+    "tags_list": {
+      "type": "customField",
+      "options": [
+        "french",
+        "organic",
+        "local",
+        "best_price",
+        "best_product"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
