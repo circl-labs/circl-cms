@@ -25,10 +25,6 @@
         "images"
       ]
     },
-    "weight_default": {
-      "type": "string",
-      "required": false
-    },
     "weight_list": {
       "type": "customField",
       "options": [
@@ -101,6 +97,20 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "weight_unit_default": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "mL"
+      ],
+      "required": true,
+      "default": "g"
+    },
+    "weight_default": {
+      "type": "integer",
+      "required": true,
+      "default": 1
     }
   }
 }
