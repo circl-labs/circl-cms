@@ -102,10 +102,11 @@
       "type": "enumeration",
       "enum": [
         "g",
-        "mL"
+        "mL",
+        "u"
       ],
       "required": true,
-      "default": "g"
+      "default": "u"
     },
     "weight_default": {
       "type": "integer",
