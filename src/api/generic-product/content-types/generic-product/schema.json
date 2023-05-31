@@ -50,18 +50,18 @@
     "seasons": {
       "type": "customField",
       "options": [
-        "Janvier",
-        "Février",
-        "Mars",
-        "Avril",
-        "Mai",
-        "Juin",
-        "Juillet",
-        "Août",
-        "Septembre",
-        "Octobre",
-        "Novembre",
-        "Décembre"
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
@@ -75,9 +75,9 @@
     "storage_method": {
       "type": "customField",
       "options": [
-        "Température ambiante",
-        "Congélateur",
-        "Réfrigérateur"
+        "ambient",
+        "fridge",
+        "freezer"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
