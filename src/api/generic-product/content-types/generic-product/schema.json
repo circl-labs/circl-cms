@@ -30,9 +30,8 @@
       "options": [
         "250",
         "500",
-        "1000",
-        "75",
-        "100"
+        "750",
+        "1000"
       ],
       "customField": "plugin::multi-select.multi-select",
       "required": false
