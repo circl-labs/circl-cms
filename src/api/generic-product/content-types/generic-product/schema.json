@@ -28,11 +28,11 @@
     "weight_list": {
       "type": "customField",
       "options": [
-        "250g",
-        "500g",
-        "1kg",
-        "75cl",
-        "1L"
+        "250",
+        "500",
+        "1000",
+        "75",
+        "100"
       ],
       "customField": "plugin::multi-select.multi-select",
       "required": false
@@ -88,21 +88,6 @@
       "default": false,
       "required": true
     },
-    "weight_unit_default": {
-      "type": "enumeration",
-      "enum": [
-        "g",
-        "mL",
-        "u"
-      ],
-      "required": true,
-      "default": "u"
-    },
-    "weight_default": {
-      "type": "integer",
-      "required": true,
-      "default": 1
-    },
     "tags_list": {
       "type": "customField",
       "options": [
@@ -119,6 +104,17 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::brand.brand"
+    },
+    "weight_unit_default": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "ml"
+      ],
+      "required": true
+    },
+    "weight_per_unit": {
+      "type": "integer"
     }
   }
 }
