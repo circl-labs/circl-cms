@@ -28,6 +28,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::seller-product.seller-product"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "EUR",
+        "USD",
+        "GBP"
+      ],
+      "default": "EUR",
+      "required": true
     }
   }
 }
