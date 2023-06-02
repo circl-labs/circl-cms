@@ -28,6 +28,10 @@
       "relation": "manyToOne",
       "target": "api::generic-category.generic-category",
       "inversedBy": "subcategories"
+    },
+    "order": {
+      "type": "integer",
+      "required": true
     }
   }
 }
