@@ -4,7 +4,8 @@
   "info": {
     "singularName": "brand",
     "pluralName": "brands",
-    "displayName": "Brand"
+    "displayName": "Brand",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +17,15 @@
       "required": true,
       "unique": true
     },
-    "image": {
+    "image_selected": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_unselected": {
       "allowedTypes": [
         "images"
       ],
