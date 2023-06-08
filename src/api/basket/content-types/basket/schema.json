@@ -26,6 +26,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::customer.customer"
+    },
+    "generic_grocery_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-grocery-list.generic-grocery-list"
     }
   }
 }
