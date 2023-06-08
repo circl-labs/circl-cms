@@ -92,6 +92,10 @@
     },
     "product_url": {
       "type": "string"
+    },
+    "product_id": {
+      "type": "string",
+      "unique": true
     }
   }
 }
