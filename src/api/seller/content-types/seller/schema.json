@@ -68,6 +68,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::seller-product.seller-product"
+    },
+    "prefilled_basket_url": {
+      "type": "string"
     }
   }
 }
