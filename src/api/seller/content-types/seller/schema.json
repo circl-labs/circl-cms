@@ -76,10 +76,10 @@
       "type": "integer"
     },
     "min_cost_delivery": {
-      "type": "integer"
+      "type": "decimal"
     },
     "max_cost_delivery": {
-      "type": "integer"
+      "type": "decimal"
     }
   }
 }
