@@ -80,6 +80,9 @@
     },
     "max_cost_delivery": {
       "type": "decimal"
+    },
+    "click_and_collect_time": {
+      "type": "integer"
     }
   }
 }
