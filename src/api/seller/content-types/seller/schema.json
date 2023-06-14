@@ -71,6 +71,15 @@
     },
     "prefilled_basket_url": {
       "type": "string"
+    },
+    "click_and_collect_threshold": {
+      "type": "integer"
+    },
+    "min_cost_delivery": {
+      "type": "integer"
+    },
+    "max_cost_delivery": {
+      "type": "integer"
     }
   }
 }
