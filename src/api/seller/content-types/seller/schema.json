@@ -83,6 +83,21 @@
     },
     "click_and_collect_time": {
       "type": "integer"
+    },
+    "delivery_area": {
+      "type": "customField",
+      "options": [
+        "Paris:75",
+        "Hauts-de-Seine:92",
+        "Val-de-Marne:94",
+        "Seine-Saint-Denis:93",
+        "Paris 16:75016",
+        "Paris 17:75017",
+        "Boulogne-Billancourt:92100",
+        "Neuilly-sur-Seine:92200",
+        "Puteaux:92800"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
