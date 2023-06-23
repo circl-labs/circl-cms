@@ -98,6 +98,15 @@
         "Puteaux:92800"
       ],
       "customField": "plugin::multi-select.multi-select"
+    },
+    "integration_type": {
+      "type": "enumeration",
+      "enum": [
+        "WOO_COMMERCE"
+      ]
+    },
+    "integration_config": {
+      "type": "json"
     }
   }
 }
