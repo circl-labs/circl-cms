@@ -38,6 +38,9 @@
       ],
       "default": "EUR",
       "required": true
+    },
+    "partner_id": {
+      "type": "biginteger"
     }
   }
 }
