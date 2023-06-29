@@ -19,6 +19,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::seller-product-detail.seller-product-detail"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
