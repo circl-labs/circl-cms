@@ -114,6 +114,9 @@
     },
     "weight_per_unit": {
       "type": "integer"
+    },
+    "matching_tags": {
+      "type": "json"
     }
   }
 }
