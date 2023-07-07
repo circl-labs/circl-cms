@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_popular_searches",
+  "info": {
+    "singularName": "generic-popular-search",
+    "pluralName": "generic-popular-searches",
+    "displayName": "Generic Popular Search"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keyword": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
