@@ -96,6 +96,13 @@
     "product_id": {
       "type": "string",
       "unique": true
+    },
+    "raw_image_url": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
