@@ -4,7 +4,8 @@
   "info": {
     "singularName": "partner-mapping-matching",
     "pluralName": "partner-mapping-matchings",
-    "displayName": "Partner Mapping Matching"
+    "displayName": "Partner Mapping Matching",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,9 +27,9 @@
       "relation": "oneToOne",
       "target": "api::seller-shop.seller-shop"
     },
-    "generic_subcategory": {
+    "generic_subcategories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::generic-subcategory.generic-subcategory"
     }
   }
