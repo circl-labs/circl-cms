@@ -41,6 +41,16 @@
     },
     "partner_id": {
       "type": "biginteger"
+    },
+    "price_by_weight": {
+      "type": "float",
+      "required": false
+    },
+    "price_before_discount": {
+      "type": "float"
+    },
+    "discount_type": {
+      "type": "string"
     }
   }
 }
