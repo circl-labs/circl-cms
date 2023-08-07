@@ -124,6 +124,13 @@
     },
     "matching_tags": {
       "type": "json"
+    },
+    "min_expiration_date": {
+      "type": "integer",
+      "min": 0
+    },
+    "max_expiration_date": {
+      "type": "integer"
     }
   }
 }
