@@ -97,10 +97,10 @@
     "tags_list": {
       "type": "customField",
       "options": [
-        "french",
         "organic",
-        "local",
+        "french",
         "best_price",
+        "local",
         "best_product"
       ],
       "required": true,
