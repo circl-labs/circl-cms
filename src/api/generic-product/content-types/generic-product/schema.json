@@ -98,10 +98,7 @@
       "type": "customField",
       "options": [
         "organic",
-        "french",
-        "best_price",
-        "local",
-        "best_product"
+        "french"
       ],
       "required": true,
       "customField": "plugin::multi-select.multi-select"
