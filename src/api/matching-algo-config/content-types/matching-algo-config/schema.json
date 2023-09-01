@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "matching_algo_configs",
+  "info": {
+    "singularName": "matching-algo-config",
+    "pluralName": "matching-algo-configs",
+    "displayName": "Matching Algo Config"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cutoff": {
+      "type": "float",
+      "max": 1,
+      "min": 0
+    },
+    "valid_score_threshold": {
+      "type": "float",
+      "min": 0,
+      "max": 1
+    },
+    "stopwords": {
+      "type": "json"
+    }
+  }
+}
