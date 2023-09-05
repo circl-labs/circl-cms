@@ -4,7 +4,8 @@
   "info": {
     "singularName": "matching-algo-config",
     "pluralName": "matching-algo-configs",
-    "displayName": "Matching Algo Config"
+    "displayName": "Matching Algo Config",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -22,6 +23,9 @@
       "max": 1
     },
     "stopwords": {
+      "type": "json"
+    },
+    "blacklisted_names": {
       "type": "json"
     }
   }
