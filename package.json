@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.10.5",
-    "@strapi/plugin-i18n": "4.12.0",
-    "@strapi/plugin-users-permissions": "4.12.0",
+    "@strapi/plugin-i18n": "4.13.2",
+    "@strapi/plugin-users-permissions": "4.13.2",
     "@strapi/provider-email-sendgrid": "^4.10.5",
-    "@strapi/strapi": "4.12.0",
+    "@strapi/strapi": "4.13.2",
     "pg": "^8.8.0",
     "strapi-plugin-multi-select": "^1.1.0"
   },

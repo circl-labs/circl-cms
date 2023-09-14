@@ -27,6 +27,11 @@
       "type": "integer",
       "min": 0,
       "max": 100
+    },
+    "generic_product_selection": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-product-selection.generic-product-selection"
     }
   }
 }
