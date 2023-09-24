@@ -2,7 +2,10 @@ name: Build Strapi and Deploy to Cloud Run
 
 on:
   push:
-    branches: [master, develop]
+    branches:
+      - master
+      - develop
+      - feat/new-prod-environment
 
 jobs:
   deploy:
