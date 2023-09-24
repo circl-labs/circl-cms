@@ -2,18 +2,17 @@ name: Build Strapi and Deploy to Cloud Run
 
 on:
   push:
-    branches: [ "master" ]
-
-env:
-  PROJECT_ID: circl-backend
-  GAR_LOCATION: europe-west3
-  SERVICE: strapi
-  REGION: europe-west3
+    tags:
+      - production/*
+      - prod/*
+      - development/*
+      - dev/*
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -35,12 +34,18 @@ jobs:
         with:
           username: _json_key
           password: ${{ secrets.GCP_KEY }}
-          registry: ${{ env.GAR_LOCATION }}-docker.pkg.dev
+          registry: ${{ vars.GAR_LOCATION }}-docker.pkg.dev
 
       - name: Build and Push Container
         run: |-
-          docker build -t "${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/cloud-run-source-deploy/${{ env.SERVICE }}:${{ github.sha }}" .
-          docker push "${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/cloud-run-source-deploy/${{ env.SERVICE }}:${{ github.sha }}"
+          docker build -t "${{ vars.GAR_LOCATION }}-docker.pkg.dev/${{ vars.PROJECT_ID }}/cloud-run-source-deploy/${{ vars.SERVICE }}:${{ github.sha }}" .
+          docker push "${{ vars.GAR_LOCATION }}-docker.pkg.dev/${{ vars.PROJECT_ID }}/cloud-run-source-deploy/${{ vars.SERVICE }}:${{ github.sha }}"
 
       - name: Deploy to Cloud Run
-        run: gcloud run deploy ${{ env.SERVICE }} --image ${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/cloud-run-source-deploy/${{ env.SERVICE }}:${{ github.sha }} --region ${{ env.REGION }} --platform managed --allow-unauthenticated
+        run: |
+          gcloud run deploy \
+            --image ${{ vars.GAR_LOCATION }}-docker.pkg.dev/${{ vars.PROJECT_ID }}/cloud-run-source-deploy/${{ vars.SERVICE }}:${{ github.sha }} \
+            --region ${{ vars.REGION }} \
+            --platform managed \
+            --allow-unauthenticated \
+            ${{ vars.SERVICE }}
