@@ -98,11 +98,18 @@
       "unique": true
     },
     "raw_image_url": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "quantity_multiple": {
+      "type": "integer"
+    },
+    "weight_unit_name": {
+      "type": "string"
     }
   }
 }
