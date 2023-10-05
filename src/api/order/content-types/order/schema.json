@@ -56,6 +56,16 @@
     },
     "additional_informations": {
       "type": "string"
+    },
+    "raw_amount": {
+      "type": "decimal"
+    },
+    "delivery_fee": {
+      "type": "decimal"
+    },
+    "service_fee": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }
