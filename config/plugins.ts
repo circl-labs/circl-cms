@@ -1,4 +1,4 @@
-module.exports = ({ env }) => ({    
+module.exports = ({ env }) => ({
     upload: {
       config: {
         provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
