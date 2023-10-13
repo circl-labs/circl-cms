@@ -110,6 +110,9 @@
     },
     "weight_unit_name": {
       "type": "string"
+    },
+    "conservation_mode": {
+      "type": "string"
     }
   }
 }
