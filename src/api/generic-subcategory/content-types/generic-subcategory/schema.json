@@ -32,6 +32,10 @@
     "order": {
       "type": "integer",
       "required": true
+    },
+    "is_perishable": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
