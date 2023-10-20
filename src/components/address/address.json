@@ -1,7 +1,8 @@
 {
   "collectionName": "components_address_addresses",
   "info": {
-    "displayName": "Address"
+    "displayName": "Address",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -22,6 +23,9 @@
     },
     "longitude": {
       "type": "float"
+    },
+    "details": {
+      "type": "string"
     }
   }
 }
