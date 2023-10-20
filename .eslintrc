@@ -1,6 +1,7 @@
 {
-  "parser": "babel-eslint",
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "env": {
     "commonjs": true,
     "es6": true,

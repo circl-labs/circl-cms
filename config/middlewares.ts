@@ -6,9 +6,9 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'storage.googleapis.com'],
+          'connect-src': ['\'self\'', 'https:'],
+          'img-src': ['\'self\'', 'data:', 'blob:', 'storage.googleapis.com'],
+          'media-src': ['\'self\'', 'data:', 'blob:', 'storage.googleapis.com'],
           upgradeInsecureRequests: null,
         },
       },

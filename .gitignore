@@ -107,6 +107,7 @@ coverage
 ############################
 
 .env
+.envrc
 license.txt
 exports
 *.cache
@@ -114,3 +115,8 @@ dist
 build
 .strapi-updater.json
 sendgrid.env
+
+############################
+# VSCode
+############################
+.vscode/settings.json

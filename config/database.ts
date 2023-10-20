@@ -1,5 +1,3 @@
-import path from 'path';
-
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
@@ -13,8 +11,8 @@ module.exports = ({ env }) => ({
       ssl: false,
     },
     acquireConnectionTimeout: 1000000,
-    pool: { 
-      min: 0, 
+    pool: {
+      min: 0,
       max: 10,
       acquireTimeoutMillis: 900000,
       createTimeoutMillis: 900000,
