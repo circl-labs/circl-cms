@@ -26,6 +26,13 @@
     },
     "details": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "home",
+        "work"
+      ]
     }
   }
 }
