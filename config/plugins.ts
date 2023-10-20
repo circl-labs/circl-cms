@@ -1,16 +1,16 @@
 module.exports = ({ env }) => ({
-    upload: {
-      config: {
-        provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
-        providerOptions: {
-            bucketName: 'circl-data-dev-eu-assets',
-            publicFiles: true,
-            uniform: true,
-            basePath: '',
-        },
+  upload: {
+    config: {
+      provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
+      providerOptions: {
+        bucketName: 'circl-data-dev-eu-assets',
+        publicFiles: true,
+        uniform: true,
+        basePath: '',
       },
     },
-    email: {
+  },
+  email: {
     config: {
       provider: 'sendgrid',
       providerOptions: {
