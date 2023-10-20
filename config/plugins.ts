@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
     config: {
       provider: '@strapi-community/strapi-provider-upload-google-cloud-storage',
       providerOptions: {
-        bucketName: 'circl-data-dev-eu-assets',
+        bucketName: env('PROVIDER_GCS_BUCKET_NAME'),
         publicFiles: true,
         uniform: true,
         basePath: '',
@@ -17,8 +17,8 @@ module.exports = ({ env }) => ({
         apiKey: env('SENDGRID_API_KEY'),
       },
       settings: {
-        defaultFrom: 'alain.bansais@circl.fr',
-        defaultReplyTo: 'alain.bansais@circl.fr',
+        defaultFrom: env('EMAIL_DEFAULT_FROM'),
+        defaultReplyTo: env('EMAIL_DEFAULT_REPLY_TO'),
       },
     },
   },
