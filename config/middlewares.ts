@@ -18,7 +18,12 @@ export default [
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
+  {
+    name: 'strapi::body',
+    config: {
+      // jsonLimit: '10mb' // Change me if there is a need to import large file
+    },
+  },
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
