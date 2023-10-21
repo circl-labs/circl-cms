@@ -21,7 +21,7 @@ export default [
   {
     name: 'strapi::body',
     config: {
-      // jsonLimit: '10mb' // Change me if there is a need to import large file
+      jsonLimit: '10mb'
     },
   },
   'strapi::session',
