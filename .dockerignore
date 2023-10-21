@@ -1,4 +1,5 @@
 .cache
+.dockerignore
 .editorconfig
 .env.*
 .eslintignore
@@ -12,5 +13,6 @@
 Dockerfile
 Dockerfile.*
 README.md
+docker-compose.yml
 dist
 node_modules
