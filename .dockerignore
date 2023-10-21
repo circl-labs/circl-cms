@@ -1,0 +1,16 @@
+.cache
+.editorconfig
+.env.*
+.eslintignore
+.eslintrc
+.git
+.github
+.gitignore
+.nvmrc
+.strapi-updater.json
+.vscode
+Dockerfile
+Dockerfile.*
+README.md
+dist
+node_modules
