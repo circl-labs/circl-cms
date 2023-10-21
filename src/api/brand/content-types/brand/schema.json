@@ -12,7 +12,7 @@
   },
   "pluginOptions": {
     "import-export-entries": {
-      "idField": "name"
+      "idField": "synchronisation_ulid"
     }
   },
   "attributes": {
@@ -30,12 +30,16 @@
       ]
     },
     "image_unselected": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "synchronisation_ulid": {
+      "type": "customField",
+      "customField": "plugin::field-ulid.ulid"
     }
   }
 }

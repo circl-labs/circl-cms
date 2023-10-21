@@ -12,7 +12,7 @@
   },
   "pluginOptions": {
     "import-export-entries": {
-      "idField": "name"
+      "idField": "synchronisation_ulid"
     }
   },
   "attributes": {
@@ -43,6 +43,10 @@
     },
     "phone_number": {
       "type": "biginteger"
+    },
+    "synchronisation_ulid": {
+      "type": "customField",
+      "customField": "plugin::field-ulid.ulid"
     }
   }
 }

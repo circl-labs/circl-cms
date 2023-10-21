@@ -12,7 +12,7 @@
   },
   "pluginOptions": {
     "import-export-entries": {
-      "idField": "name"
+      "idField": "synchronisation_ulid"
     }
   },
   "attributes": {
@@ -40,6 +40,10 @@
     "is_perishable": {
       "type": "boolean",
       "default": true
+    },
+    "synchronisation_ulid": {
+      "type": "customField",
+      "customField": "plugin::field-ulid.ulid"
     }
   }
 }

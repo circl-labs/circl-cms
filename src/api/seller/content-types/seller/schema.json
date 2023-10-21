@@ -12,7 +12,7 @@
   },
   "pluginOptions": {
     "import-export-entries": {
-      "idField": "name"
+      "idField": "synchronisation_ulid"
     }
   },
   "attributes": {
@@ -113,6 +113,10 @@
     },
     "integration_config": {
       "type": "json"
+    },
+    "synchronisation_ulid": {
+      "type": "customField",
+      "customField": "plugin::field-ulid.ulid"
     }
   }
 }
