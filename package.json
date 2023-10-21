@@ -1,8 +1,9 @@
 {
   "name": "circl-cms",
+  "packageManager": "yarn@3.6.4",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Headless CMS for Circl app",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -29,7 +30,7 @@
     "typescript": "^5.2.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Circl"
   },
   "strapi": {
     "uuid": "41b9156d-4e2f-4154-81f9-156f5c7d953c",

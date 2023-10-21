@@ -83,6 +83,7 @@ nbproject
 public/uploads/*
 !public/uploads/.gitkeep
 
+
 ############################
 # Node.js
 ############################
@@ -95,12 +96,25 @@ results
 node_modules
 .node_history
 
+
+############################
+# yarn
+############################
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+
 ############################
 # Tests
 ############################
 
 testApp
 coverage
+
 
 ############################
 # Strapi
@@ -118,6 +132,7 @@ build
 .strapi-updater.json
 sendgrid.env
 config/sync/*
+
 
 ############################
 # VSCode
