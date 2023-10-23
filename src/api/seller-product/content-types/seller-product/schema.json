@@ -108,7 +108,7 @@
     "quantity_multiple": {
       "type": "integer"
     },
-    "weight_unit_name": {
+    "quantity_unit_name": {
       "type": "string"
     },
     "conservation_mode": {
