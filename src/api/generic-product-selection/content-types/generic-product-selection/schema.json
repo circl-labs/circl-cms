@@ -55,6 +55,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::brand.brand"
+    },
+    "seller_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seller-product.seller-product"
     }
   }
 }
