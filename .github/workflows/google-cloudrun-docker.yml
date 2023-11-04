@@ -14,12 +14,12 @@ jobs:
   setup:
     name: Setup
     runs-on: ubuntu-latest
-    # environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
+    environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
     steps:
       - name: Setup variables
         id: vars
         run: |
-          echo "docker__registry=${{ vars.GAR_LOCATION }}-docker.pkg.dev/" >> $GITHUB_OUTPUT
+          echo "docker__registry=${{ vars.GAR_LOCATION }}-docker.pkg.dev" >> $GITHUB_OUTPUT
           echo "docker__image=${{ vars.GAR_LOCATION }}-docker.pkg.dev/${{ vars.PROJECT_ID }}/cloud-run-source-deploy/${{ vars.SERVICE }}" >> $GITHUB_OUTPUT
     outputs:
       docker__registry: ${{ steps.vars.outputs.docker__registry }}
@@ -28,7 +28,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    # environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
+    environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
     needs: [setup]
     steps:
       - name: Checkout
@@ -66,7 +66,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    # environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
+    environment: ${{ startsWith(github.ref, 'refs/tags/prod') && 'production' || 'development' }}
     needs: [setup, build]
     steps:
       - name: Authenticate to Google Cloud
