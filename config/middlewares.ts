@@ -7,7 +7,7 @@ export default [
         useDefaults: true,
         directives: {
           'connect-src': ['\'self\'', 'https:'],
-          'img-src': ['\'self\'', 'data:', 'blob:', 'storage.googleapis.com'],
+          'img-src': ['\'self\'', 'data:', 'blob:', 'storage.googleapis.com', 'market-assets.strapi.io'],
           'media-src': ['\'self\'', 'data:', 'blob:', 'storage.googleapis.com'],
           upgradeInsecureRequests: null,
         },
