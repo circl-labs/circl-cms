@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "labelled_seller_products",
+  "info": {
+    "singularName": "labelled-seller-product",
+    "pluralName": "labelled-seller-products",
+    "displayName": "Labelled Seller Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "weight_unit": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "text"
+    },
+    "weight": {
+      "type": "integer",
+      "required": true
+    },
+    "product_url": {
+      "type": "string",
+      "required": true
+    },
+    "item_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "target": {
+      "type": "string",
+      "required": true
+    },
+    "generic_product_name": {
+      "type": "string",
+      "required": true
+    },
+    "retailer_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
