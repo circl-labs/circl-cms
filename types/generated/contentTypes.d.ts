@@ -1161,6 +1161,11 @@ export interface ApiGenericProductSelectionGenericProductSelection
       'oneToOne',
       'api::brand.brand'
     >;
+    seller_product: Attribute.Relation<
+      'api::generic-product-selection.generic-product-selection',
+      'oneToOne',
+      'api::seller-product.seller-product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1263,6 +1268,52 @@ export interface ApiItemItem extends Schema.CollectionType {
     createdBy: Attribute.Relation<'api::item.item', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::item.item', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLabelledSellerProductLabelledSellerProduct
+  extends Schema.CollectionType {
+  collectionName: 'labelled_seller_products';
+  info: {
+    singularName: 'labelled-seller-product';
+    pluralName: 'labelled-seller-products';
+    displayName: 'Labelled Seller Product';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    category: Attribute.String;
+    image: Attribute.Media & Attribute.Required;
+    description: Attribute.Text;
+    origin: Attribute.String;
+    weight_unit: Attribute.String & Attribute.Required;
+    brand: Attribute.String;
+    ingredients: Attribute.Text;
+    weight: Attribute.Integer & Attribute.Required;
+    product_url: Attribute.String & Attribute.Required;
+    item_id: Attribute.String & Attribute.Required;
+    user_name: Attribute.String & Attribute.Required;
+    date: Attribute.Date & Attribute.Required;
+    target: Attribute.String & Attribute.Required;
+    generic_product_name: Attribute.String & Attribute.Required;
+    retailer_name: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::labelled-seller-product.labelled-seller-product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::labelled-seller-product.labelled-seller-product',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
   };
 }
@@ -1573,7 +1624,7 @@ export interface ApiSellerProductSellerProduct extends Schema.CollectionType {
     product_id: Attribute.String & Attribute.Unique;
     raw_image_url: Attribute.Media;
     quantity_multiple: Attribute.Integer;
-    weight_unit_name: Attribute.String;
+    quantity_unit_name: Attribute.String;
     conservation_mode: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1754,6 +1805,7 @@ declare module '@strapi/types' {
       'api::generic-product-selection.generic-product-selection': ApiGenericProductSelectionGenericProductSelection;
       'api::generic-subcategory.generic-subcategory': ApiGenericSubcategoryGenericSubcategory;
       'api::item.item': ApiItemItem;
+      'api::labelled-seller-product.labelled-seller-product': ApiLabelledSellerProductLabelledSellerProduct;
       'api::matching-algo-config.matching-algo-config': ApiMatchingAlgoConfigMatchingAlgoConfig;
       'api::missing-generic-product.missing-generic-product': ApiMissingGenericProductMissingGenericProduct;
       'api::order.order': ApiOrderOrder;
