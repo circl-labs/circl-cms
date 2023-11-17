@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordered_items",
+  "info": {
+    "singularName": "ordered-item",
+    "pluralName": "ordered-items",
+    "displayName": "Ordered Item"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
