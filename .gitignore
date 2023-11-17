@@ -132,6 +132,7 @@ build
 .strapi-updater.json
 sendgrid.env
 config/sync/*
+types/*
 
 
 ############################
