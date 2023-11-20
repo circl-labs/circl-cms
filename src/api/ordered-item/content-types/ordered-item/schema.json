@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ordered-item",
     "pluralName": "ordered-items",
-    "displayName": "Ordered Item"
+    "displayName": "Ordered Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,6 +15,48 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "weight_unit": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "ml",
+        "u"
+      ],
+      "required": true
+    },
+    "thrown": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "consumption_limit": {
+      "type": "integer"
+    },
+    "price_by_weight": {
+      "type": "decimal"
     }
   }
 }
