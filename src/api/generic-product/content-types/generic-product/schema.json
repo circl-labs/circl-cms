@@ -32,6 +32,8 @@
     "weight_list": {
       "type": "customField",
       "options": [
+        "20",
+        "25",
         "50",
         "100",
         "125",
@@ -48,6 +50,8 @@
         "750",
         "825",
         "1000",
+        "1500",
+        "2000",
         "10000"
       ],
       "customField": "plugin::multi-select.multi-select",
