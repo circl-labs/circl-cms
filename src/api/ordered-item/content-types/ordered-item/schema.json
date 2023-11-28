@@ -52,11 +52,11 @@
       "relation": "oneToOne",
       "target": "api::order.order"
     },
-    "consumption_limit": {
-      "type": "integer"
-    },
     "price_by_weight": {
       "type": "decimal"
+    },
+    "expiration_date": {
+      "type": "datetime"
     }
   }
 }
