@@ -57,6 +57,14 @@
     },
     "expiration_date": {
       "type": "datetime"
+    },
+    "tags_list": {
+      "type": "customField",
+      "options": [
+        "organic",
+        "french"
+      ],
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
