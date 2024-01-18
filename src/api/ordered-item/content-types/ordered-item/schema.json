@@ -70,6 +70,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::generic-product.generic-product"
+    },
+    "quantity_multiple": {
+      "type": "integer"
     }
   }
 }
