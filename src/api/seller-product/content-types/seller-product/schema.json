@@ -113,6 +113,9 @@
     },
     "conservation_mode": {
       "type": "string"
+    },
+    "is_matched": {
+      "type": "boolean"
     }
   }
 }
