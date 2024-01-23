@@ -32,6 +32,16 @@
     "weight_list": {
       "type": "customField",
       "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "10",
+        "12",
+        "18",
         "20",
         "25",
         "50",
@@ -116,7 +126,8 @@
       "type": "enumeration",
       "enum": [
         "g",
-        "ml"
+        "ml",
+        "u"
       ],
       "required": true
     },
