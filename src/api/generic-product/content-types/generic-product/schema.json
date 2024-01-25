@@ -126,8 +126,7 @@
       "type": "enumeration",
       "enum": [
         "g",
-        "ml",
-        "u"
+        "ml"
       ],
       "required": true
     },
@@ -158,6 +157,10 @@
     "synchronisation_ulid": {
       "type": "customField",
       "customField": "plugin::field-ulid.ulid"
+    },
+    "is_grouped": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
