@@ -4,7 +4,8 @@
   "info": {
     "singularName": "loading-quote",
     "pluralName": "loading-quotes",
-    "displayName": "Loading Quote"
+    "displayName": "Loading Quote",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,10 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "synchronisation_ulid": {
+      "type": "customField",
+      "customField": "plugin::field-ulid.ulid"
     }
   }
 }
