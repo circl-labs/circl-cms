@@ -73,6 +73,9 @@
     },
     "quantity_multiple": {
       "type": "integer"
+    },
+    "savings": {
+      "type": "decimal"
     }
   }
 }
