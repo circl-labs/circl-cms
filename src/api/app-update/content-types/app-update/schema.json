@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "app_updates",
+  "info": {
+    "singularName": "app-update",
+    "pluralName": "app-updates",
+    "displayName": "App Update"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "update": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
