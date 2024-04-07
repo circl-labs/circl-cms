@@ -1,6 +1,6 @@
 {
   "name": "circl-cms",
-  "packageManager": "yarn@3.6.4",
+  "packageManager": "yarn@4.1.1",
   "private": true,
   "version": "0.1.0",
   "description": "Headless CMS for Circl app",
