@@ -38,7 +38,8 @@
     },
     "synchronisation_ulid": {
       "type": "customField",
-      "customField": "plugin::field-ulid.ulid"
+      "customField": "plugin::field-ulid.ulid",
+      "required": true
     }
   }
 }
