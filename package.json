@@ -20,18 +20,18 @@
     "pg": "^8.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^6.22.3",
     "strapi-content-type-explorer": "^0.2.2",
     "strapi-plugin-config-sync": "^1.2.3",
     "strapi-plugin-import-export-entries": "^1.23.1",
     "strapi-plugin-multi-select": "^1.2.3",
     "strapi-ulid": "^0.1.5",
-    "styled-components": "^5.3.11"
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^9.0.0",
     "typescript": "^5.4.4"
   },
   "author": {
