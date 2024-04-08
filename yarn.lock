@@ -5677,7 +5677,7 @@ __metadata:
     strapi-plugin-config-sync: "npm:^1.2.3"
     strapi-plugin-import-export-entries: "npm:^1.22.1"
     strapi-plugin-multi-select: "npm:^1.2.2"
-    strapi-ulid: "npm:0.1.5"
+    strapi-ulid: "npm:^0.1.5"
     styled-components: "npm:^5.2.1"
     typescript: "npm:^5.2.2"
   languageName: unknown
@@ -14572,7 +14572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strapi-ulid@npm:0.1.5":
+"strapi-ulid@npm:^0.1.5":
   version: 0.1.5
   resolution: "strapi-ulid@npm:0.1.5"
   dependencies:
