@@ -118,6 +118,9 @@
       "type": "customField",
       "customField": "plugin::field-ulid.ulid",
       "required": true
+    },
+    "promotion_code": {
+      "type": "string"
     }
   }
 }
