@@ -121,6 +121,9 @@
     },
     "promotion_code": {
       "type": "string"
+    },
+    "label_promotion_code": {
+      "type": "string"
     }
   }
 }
