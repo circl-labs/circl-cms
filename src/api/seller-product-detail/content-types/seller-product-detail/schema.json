@@ -52,7 +52,7 @@
     "discount_type": {
       "type": "string"
     },
-    "labelized_discount_type": {
+    "labeled_discount_type": {
       "type": "string"
     },
     "required_discount_quantity": {
