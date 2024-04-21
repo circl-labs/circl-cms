@@ -51,6 +51,23 @@
     },
     "discount_type": {
       "type": "string"
+    },
+    "labelized_discount_type": {
+      "type": "string"
+    },
+    "required_discount_quantity": {
+      "type": "integer"
+    },
+    "total_discount_gained": {
+      "type": "decimal"
+    },
+    "loyalty_type": {
+      "type": "enumeration",
+      "enum": [
+        "loyalty",
+        "cashback",
+        "none"
+      ]
     }
   }
 }
