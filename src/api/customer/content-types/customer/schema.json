@@ -37,6 +37,9 @@
     },
     "first_name": {
       "type": "string"
+    },
+    "fcm_tokens": {
+      "type": "json"
     }
   }
 }
