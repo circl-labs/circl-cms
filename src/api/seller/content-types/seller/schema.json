@@ -124,6 +124,9 @@
     },
     "label_promotion_code": {
       "type": "string"
+    },
+    "is_live": {
+      "type": "boolean"
     }
   }
 }

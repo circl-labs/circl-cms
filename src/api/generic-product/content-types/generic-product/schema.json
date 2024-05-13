@@ -127,7 +127,7 @@
       "target": "api::generic-subcategory.generic-subcategory",
       "inversedBy": "generic_products"
     },
-    "is_visible": {
+    "is_live": {
       "type": "boolean",
       "default": false,
       "required": true
