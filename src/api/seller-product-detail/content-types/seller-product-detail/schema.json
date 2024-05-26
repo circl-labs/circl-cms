@@ -64,8 +64,8 @@
     "loyalty_type": {
       "type": "enumeration",
       "enum": [
-        "loyalty",
         "cashback",
+        "immediate",
         "none"
       ]
     }
