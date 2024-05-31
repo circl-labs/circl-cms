@@ -186,6 +186,11 @@
     "is_grouped": {
       "type": "boolean",
       "default": false
+    },
+    "pack_variant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-product.generic-product"
     }
   }
 }
