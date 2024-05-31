@@ -74,6 +74,9 @@
         "IN_PROGRESS",
         "VALIDATED"
       ]
+    },
+    "amount_order_tracked": {
+      "type": "decimal"
     }
   }
 }
