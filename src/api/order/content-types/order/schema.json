@@ -51,9 +51,6 @@
       "repeatable": false,
       "component": "address.address"
     },
-    "delivery_date": {
-      "type": "datetime"
-    },
     "additional_informations": {
       "type": "string"
     },
@@ -77,6 +74,9 @@
     },
     "amount_order_tracked": {
       "type": "decimal"
+    },
+    "delivery_date": {
+      "type": "string"
     }
   }
 }
