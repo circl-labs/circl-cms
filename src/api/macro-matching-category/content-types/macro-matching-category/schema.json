@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "macro_matching_categories",
+  "info": {
+    "singularName": "macro-matching-category",
+    "pluralName": "macro-matching-categories",
+    "displayName": "Macro Matching Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "generic_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generic-category.generic-category"
+    }
+  }
+}
