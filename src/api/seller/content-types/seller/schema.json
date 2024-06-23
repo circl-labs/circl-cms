@@ -125,7 +125,7 @@
     "label_promotion_code": {
       "type": "string"
     },
-    "is_live": {
+    "is_in_comparator": {
       "type": "boolean"
     }
   }
