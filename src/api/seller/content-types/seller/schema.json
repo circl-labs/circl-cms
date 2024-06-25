@@ -127,6 +127,9 @@
     },
     "is_in_comparator": {
       "type": "boolean"
+    },
+    "is_in_discounts": {
+      "type": "boolean"
     }
   }
 }
