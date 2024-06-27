@@ -19,7 +19,7 @@
     "content": {
       "type": "richtext",
       "required": true,
-      "maxLength": 250
+      "maxLength": 140
     },
     "synchronisation_ulid": {
       "type": "customField",
