@@ -4,7 +4,7 @@
  */
 import i18N from "@strapi/plugin-i18n/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
-import contentTypeExplorer from "strapi-content-type-explorer/strapi-admin";
+import strapiContentTypeExplorer from "strapi-content-type-explorer/strapi-admin";
 import configSync from "strapi-plugin-config-sync/strapi-admin";
 import importExportEntries from "strapi-plugin-import-export-entries/strapi-admin";
 import multiSelect from "strapi-plugin-multi-select/strapi-admin";
@@ -15,7 +15,7 @@ renderAdmin(document.getElementById("strapi"), {
   plugins: {
     i18n: i18N,
     "users-permissions": usersPermissions,
-    "content-type-explorer": contentTypeExplorer,
+    "strapi-content-type-explorer": strapiContentTypeExplorer,
     "config-sync": configSync,
     "import-export-entries": importExportEntries,
     "multi-select": multiSelect,
