@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generic_product_average_prices",
+  "info": {
+    "singularName": "generic-product-average-price",
+    "pluralName": "generic-product-average-prices",
+    "displayName": "Generic Product Average Price"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "generic_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::generic-product.generic-product"
+    },
+    "avg_price": {
+      "type": "decimal"
+    },
+    "avg_organic_price": {
+      "type": "decimal"
+    },
+    "avg_french_price": {
+      "type": "decimal"
+    }
+  }
+}
