@@ -116,6 +116,9 @@
     },
     "is_matched": {
       "type": "boolean"
+    },
+    "product_sku": {
+      "type": "string"
     }
   }
 }
