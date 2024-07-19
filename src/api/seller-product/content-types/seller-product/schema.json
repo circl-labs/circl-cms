@@ -124,6 +124,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::generic-product.generic-product"
+    },
+    "matching_status": {
+      "type": "enumeration",
+      "enum": [
+        "TO_BE_REVIEWED",
+        "BLOCKED",
+        "MATCHED",
+        "CONFIRMED",
+        "DONE_MANUALLY"
+      ]
     }
   }
 }
