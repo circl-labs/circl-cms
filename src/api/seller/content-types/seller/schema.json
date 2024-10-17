@@ -130,6 +130,12 @@
     },
     "is_in_discounts": {
       "type": "boolean"
+    },
+    "is_in_comparator_android": {
+      "type": "boolean"
+    },
+    "is_in_discounts_android": {
+      "type": "boolean"
     }
   }
 }
