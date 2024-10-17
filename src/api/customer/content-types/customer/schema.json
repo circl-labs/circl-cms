@@ -43,6 +43,9 @@
     },
     "ai_receipt_usage": {
       "type": "json"
+    },
+    "discount_notification": {
+      "type": "json"
     }
   }
 }
