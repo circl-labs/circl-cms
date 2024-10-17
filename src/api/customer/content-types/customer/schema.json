@@ -40,6 +40,9 @@
     },
     "fcm_tokens": {
       "type": "json"
+    },
+    "ai_receipt_usage": {
+      "type": "json"
     }
   }
 }
