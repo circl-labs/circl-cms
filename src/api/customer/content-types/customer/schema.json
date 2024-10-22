@@ -46,6 +46,9 @@
     },
     "discount_notification": {
       "type": "json"
+    },
+    "custom_ai_receipt_usage_limit": {
+      "type": "integer"
     }
   }
 }
