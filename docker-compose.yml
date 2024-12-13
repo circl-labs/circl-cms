@@ -1,12 +1,10 @@
-version: "3"
-
 services:
   strapi:
     container_name: circl-strapi
     build:
       context: .
-      dockerfile: Dockerfile.dev
-    image: circl-strapi-dev:latest
+      dockerfile: Dockerfile
+    command: yarn develop
     restart: unless-stopped
     env_file: .env
     environment:
