@@ -3,13 +3,13 @@ FROM node:18-alpine as build
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git > /dev/null 2>&1
 ENV NODE_ENV=production
 
+RUN corepack enable && corepack prepare yarn@4.5.0 --activate
+
 WORKDIR /opt/
 COPY package.json yarn.lock ./
 RUN yarn global add node-gyp
 RUN yarn config set network-timeout 600000 -g && yarn install --production
 ENV PATH /opt/node_modules/.bin:$PATH
-
-RUN corepack enable && corepack prepare yarn@4.5.0 --activate
 
 WORKDIR /opt/app
 COPY . .
