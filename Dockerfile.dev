@@ -5,6 +5,8 @@ RUN apk update \
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
+RUN corepack enable && corepack prepare yarn@4.5.0 --activate
+
 WORKDIR /opt/
 COPY package.json yarn.lock ./
 RUN yarn global add node-gyp
