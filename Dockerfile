@@ -9,6 +9,8 @@ RUN yarn global add node-gyp
 RUN yarn config set network-timeout 600000 -g && yarn install --production
 ENV PATH /opt/node_modules/.bin:$PATH
 
+RUN corepack enable && corepack prepare yarn@4.5.0 --activate
+
 WORKDIR /opt/app
 COPY . .
 RUN yarn config set nodeLinker /opt/node_modules && yarn build
