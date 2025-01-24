@@ -48,6 +48,12 @@
       "type": "customField",
       "customField": "plugin::field-ulid.ulid",
       "required": true
+    },
+    "is_delivery": {
+      "type": "boolean"
+    },
+    "is_click_and_collect": {
+      "type": "boolean"
     }
   }
 }
