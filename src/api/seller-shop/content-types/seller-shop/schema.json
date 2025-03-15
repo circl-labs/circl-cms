@@ -54,6 +54,10 @@
     },
     "is_click_and_collect": {
       "type": "boolean"
+    },
+    "wiser_shop_id": {
+      "type": "string",
+      "required": false
     }
   }
 }
