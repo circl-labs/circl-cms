@@ -134,6 +134,9 @@
         "CONFIRMED",
         "DONE_MANUALLY"
       ]
+    },
+    "ean": {
+      "type": "string"
     }
   }
 }
